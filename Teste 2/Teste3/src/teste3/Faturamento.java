@@ -1,7 +1,5 @@
 package teste3;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Faturamento {
 
@@ -13,7 +11,6 @@ public class Faturamento {
     private double maiorValor;
     private int maiorDia;
     private double media;
-    
 
     public void MaiorValor() {
 
@@ -28,8 +25,8 @@ public class Faturamento {
 
         }
 
-        System.out.printf("Dia com Maior faturamento: Dia %d\n" , maiorDia);
-        System.out.printf("Faturamento: %.2f\n" , maiorValor);
+        System.out.printf("Dia com Maior faturamento: Dia %d\n", maiorDia);
+        System.out.printf("Faturamento: %.2f\n", maiorValor);
 
     }
 
@@ -59,28 +56,21 @@ public class Faturamento {
             if (valor[i] > 0) {
                 totalDias += 1;
                 totalValor += valor[i];
-                
-                
+
             }
 
         }
-        
-        
-        
+
         media = totalValor / totalDias;
-        
-        System.out.println(media);
+
         System.out.println("DIAS COM FATURAMENTO ACIMA DA MÉDIA");
-        for(int i = 0;i < dia.length;i++){
-            if(valor[i] > media){
-                System.out.printf("Dia: %d\n",dia[i]);
-                
+        for (int i = 0; i < dia.length; i++) {
+            if (valor[i] > media) {
+                System.out.printf("Dia: %d\n", dia[i]);
+
             }
         }
 
-        
-        
-        
     }
 
 }
